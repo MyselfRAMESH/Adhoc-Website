@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <title>Adhoc</title>
+
+<style>
+    .brand-logo-style{
+    padding: 10px;
+}
+
+.bg-img-style{
+    height: 45%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.header-style{
+    top: 25%;
+    bottom: 50%;
+    flex-wrap: wrap;
+    padding: 10px;
+    text-align: center;
+    background-color: gray;
+}
+
+.h1-style{
+    flex-wrap: wrap;
+    font-size: 70px;
+    padding: 5px;
+}
+.head-p-style{
+    flex-wrap: wrap;
+    font-size: 20px;
+    padding: 5px;
+}
+.why-adhoc-style{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 70px;
+}
+
+.carosuel-bg-style{
+    background-color: #000000;
+    height: 100%;
+    padding: 30px;
+    position: relative;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+</style>
+
+</head>
+
+<body>
+  <!-- Navbar Component -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"> <!--Logo-->
+        <img class="brand-logo-style" src="https://content.codecademy.com/courses/learn-bootstrap-4/adhoc/logo.png?_gl=1*1hp5fo1*_ga*NzIxNzc3MDgzMy4xNzEzMTg4NzQ1*_ga_3LRZM6TM9L*MTcxMzIxMzE2NS4yLjEuMTcxMzIxMzQ2NC42MC4wLjA."/> 
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Our Team</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <div class="bg-img-style col-12" style="background:url(https://content.codecademy.com/courses/learn-bootstrap-4/adhoc/jumbotron.png) no-repeat; background-size: cover;">
+    <div class="header-style col-12 display-3">
+        <h1 class="h1-style">Administration made easy</h1>
+        <p class="head-p-style">Adhoc is an on-demand administrative sevice for your companey.</p>
+    </div>
+</div>
+
+  <!-- Container -->
+  <div class="container">
+    <!-- Quote Section -->
+    <div class="row">
+      <div  class="col">
+        <h2 style="text-align: left; font-style: italic;  color: rgb(192, 185, 185);">"Thanks to Adhoc we now have beautiful and faithful service every
+          day. Our customers are happy and engagement has drastically increased. Highly recommend!"</h2>
+        <p style="text-align: right; font-style: italic; font-weight: bold;">-Dave Ellavar, <span style=" font-style: italic; font-weight: lighter;" >Academy of Code</span></p>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Why Adhoc? Text -->
+    <div class="row">
+      <div class="col-12 display-4">
+        <h2 class="why-adhoc-style">Why Adhoc?</h2>
+      </div>
+    </div>
+
+    <!-- Image Reasons Section -->
+    <div class="row ">
+      <div class="col-12 col-md-4">
+        <!-- First card goes here -->
+        <img src="https://content.codecademy.com/courses/learn-bootstrap-4/adhoc/experienced.png?_gl=1*1w7bf3z*_ga*NzIxNzc3MDgzMy4xNzEzMTg4NzQ1*_ga_3LRZM6TM9L*MTcxMzIxMzE2NS4yLjEuMTcxMzIxMzQ2NC42MC4wLjA."/>
+        <p class="pt-2" style=" flex-wrap:wrap; text-align: center; font-size: 20px;">Over 900 Happy Clients, we learn somthing new from each one.</p>
+    </div>
+
+      <div class="col-12 col-md-4">
+        <!-- Second card goes here -->
+        <img src="https://content.codecademy.com/courses/learn-bootstrap-4/adhoc/fun.png?_gl=1*1w7bf3z*_ga*NzIxNzc3MDgzMy4xNzEzMTg4NzQ1*_ga_3LRZM6TM9L*MTcxMzIxMzE2NS4yLjEuMTcxMzIxMzQ2NC42MC4wLjA."/>
+        <p class="pt-2" style=" flex-wrap:wrap; text-align: center; font-size: 20px;">Ministration? Fun?, Yaa ehow we make it happen. </p>
+    </div>
+
+      <div class="col-12 col-md-4">
+        <!-- Third card goes here -->
+        <img src="https://content.codecademy.com/courses/learn-bootstrap-4/adhoc/smart.png?_gl=1*1w7bf3z*_ga*NzIxNzc3MDgzMy4xNzEzMTg4NzQ1*_ga_3LRZM6TM9L*MTcxMzIxMzE2NS4yLjEuMTcxMzIxMzQ2NC42MC4wLjA." />
+        <p class="pt-2" style=" flex-wrap:wrap; text-align: center; font-size: 20px;">Innovative solution to the trickest of every day task.</p>
+    </div>
+    </div>
+
+    <!-- Meet the Team Section -->
+<div class="carosuel-bg-style mt-5 mb-4">
+    <div class="row ">
+      <div class="col-12">
+        <h2 style="font-size: 70px; text-align: center;">Meet the Team</h2>
+      </div>
+    </div>
+
+    <!-- Team Pictures Carousel -->
+    <div  class="row mt-5">
+        <div class="col-12">
+        <!-- Carousel Component -->
+        <div style="padding-left: 50px; padding-right: 50px;" id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner ">
+            <div class="carousel-item active">
+              <img src="https://content.codecademy.com/courses/learn-bootstrap-4/adhoc/brian.png?_gl=1*1y3ytpj*_ga*NzIxNzc3MDgzMy4xNzEzMTg4NzQ1*_ga_3LRZM6TM9L*MTcxMzIxMzE2NS4yLjEuMTcxMzIxMzQ2NC42MC4wLjA." class="d-block w-100" alt="...">
+                <div style=" padding-bottom: 10px;  background-color: gray; text-align: center; font-size: 25px;">
+                    <p>CEO: Brain.M</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://content.codecademy.com/courses/learn-bootstrap-4/adhoc/andy.png?_gl=1*1y3ytpj*_ga*NzIxNzc3MDgzMy4xNzEzMTg4NzQ1*_ga_3LRZM6TM9L*MTcxMzIxMzE2NS4yLjEuMTcxMzIxMzQ2NC42MC4wLjA." class="d-block w-100" alt="...">
+              <div style=" padding-bottom: 10px;  background-color: gray; text-align: center; font-size: 25px;">
+                <p>CEO: Andy.C</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://content.codecademy.com/courses/learn-bootstrap-4/adhoc/angela.png?_gl=1*1y3ytpj*_ga*NzIxNzc3MDgzMy4xNzEzMTg4NzQ1*_ga_3LRZM6TM9L*MTcxMzIxMzE2NS4yLjEuMTcxMzIxMzQ2NC42MC4wLjA." class="d-block w-100" alt="...">
+              <div style=" padding-bottom: 10px; background-color: gray; text-align: center; font-size: 25px;">
+                <p>CEO: Angela.W</p>
+              </div>
+                
+            </div>
+            <div class="carousel-item">
+              <img src="https://content.codecademy.com/courses/learn-bootstrap-4/adhoc/amie.png?_gl=1*1y3ytpj*_ga*NzIxNzc3MDgzMy4xNzEzMTg4NzQ1*_ga_3LRZM6TM9L*MTcxMzIxMzE2NS4yLjEuMTcxMzIxMzQ2NC42MC4wLjA." class="d-block w-100" alt="...">
+              <div style=" padding-bottom: 10px; background-color: gray; text-align: center; font-size: 25px;">
+                <p>CEO: Amei.S</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer style="text-align: center; font-size: 25px; margin-bottom: 10px;">2019 Adhoc &copy;</footer>
+
+  <!-- Bootstrap's JavaScript Files -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+
+</html>
