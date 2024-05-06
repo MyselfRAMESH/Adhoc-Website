@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="bg-container p-5">
+        <h1 class="heading">Time Converter</h1>
+        <p class="para">Enter hours and minutes values to convery into seconds</p>
+        <div class="mt-2">
+            <label class="hours-style" for="hoursInput">Hours*</label>
+            <input id="hoursInput" class="pt-0 input-style" type="text" />
+        </div>
+        <div class="mt-3">
+            <label class="hours-style" for="minutesInput">Minutes*</label>
+            <input id="minutesInput" class=" pt-0 input-style" type="text">
+
+        </div>
+        <button id="convertBtn" class="mt-3 style-btn btn"> Convert to Seconds </button>
+        <p id="errorMsg" class="alert-para"></p>
+        <p id="timeInSeconds"> </p>
+    </div>
+</body>
+
+</html>
+
+
+// Css
+
+
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.bg-container {
+    background-image: url('https://assets.ccbp.in/frontend/dynamic-webapps/time-converter-bg.png');
+    height: 100%;
+    background-size: cover;
+
+}
+
+.heading {
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.para {
+    color: white;
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+.hours-style {
+    font-family: 'Roboto';
+    color: #ffffff;
+}
+
+.input-style {
+    width: 100%;
+    height: 35px;
+    border-radius: 7px;
+    border-width: 0px;
+}
+
+.style-btn {
+    background-color: #ffffff;
+    font-weight: 600;
+}
+
+.alert-para {
+    font-family: 'Roboto';
+    padding-top: 13px;
+    color: #ffffff;
+}
+
+.seconds-convert-style {
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffffff;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    width: 190px;
+    padding: 10px;
+    color: #ffffff;
+} 
+
+
+// Java script
+
+let hoursInputEl = document.getElementById("hoursInput");
+let minutesInputEl = document.getElementById("minutesInput");
+let convertBtnEl = document.getElementById("convertBtn");
+let timeInSecondsEl = document.getElementById("timeInSeconds");
+let errorMsgEl = document.getElementById("errorMsg");
+
+
+convertBtnEl = addEventListener('click', function getSeconds() {
+    let hoursInputValue = parseInt(hoursInputEl.value);
+    let minutsInputValue = parseInt(minutesInputEl.value);
+    let cvonverToSeconds = ((hoursInputValue * 3600) + (minutsInputValue * 60));
+
+    if (isNaN(hoursInputValue)) {
+        errorMsgEl.textContent = 'please enter a value number of hours';
+    } else if (isNaN(minutsInputValue)) {
+        errorMsgEl.textContent = 'please enter a value number of minuts';
+    } else {
+        timeInSecondsEl.textContent = cvonverToSeconds + "s";
+        timeInSecondsEl.classList.add('seconds-convert-style');
+    }
+
+});
